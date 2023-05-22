@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VooDoo</title>
+    <link rel="shortcut icon" href="/img/logo.png" />
+
+    <link href="/style/style.css" rel="stylesheet" />
+    <link href="/style/style_2.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="" style="font-family: 'Space Grotesk', sans-serif">
+    <header class="bg-[#FCF7E6] flex justify-between border-b-2 border-black">
+      <div class="ml-12 mt-6 mb-6 sm:ml-32 sm:mt-12 sm:mb-12">
+        <img
+          class="absolute w-6 h-6 sm:w-11 sm:h-11 left-5 sm:left-20"
+          src="/img/logo.png"
+        />
+        <img class="w-24 h-12 md:w-full md:h-full" src="/img/VooDoo Test.png" />
+      </div>
+      <div class="mt-8 mr-6 sm:mr-32 sm:mt-12">
+        <ul class="flex text-sm sm:text-xl">
+          <li><a class="no-underline p-1" href="#">About us</a></li>
+          <li>
+            <a
+              class="no-underline bg-black ml-12 text-white p-2 border-r-2"
+              href="#"
+              >Sign-up</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="bg-[#FCF7E6]">
+      <section class="relative pt-24 pb-12 border-r-4">
+        <div
+          class="flex justify-between items-center mr-32 ml-32 bg-black h-20 p-7"
+        >
+          <div class="flex text-white text-xl">
+            <img class="w-6 h-6 mr-2" src="img/alert-circle.png" />
+            <p class="text-base mr-12">ALPHA</p>
+            <p class="hidden md:flex text-sm" id="toggleContent">
+              Important info regarding our service
+            </p>
+            <p class="md:hidden text-sm" id="toggleContent">Important info</p>
+          </div>
+          <div id="toggleButton" class="cursor-pointer">
+            <img src="img/Vector.png" />
+          </div>
+        </div>
+        <div
+          class="hidden absolute bg-black border-t-2 h-24 text-white mr-32 ml-32"
+          id="additionalContent"
+        >
+          <div class="h-24 flex justify-center items-center">
+            <p class="font-bold">hidden information</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main_section" class="items flex mr-32 ml-32">
+        <div id="loader" class="loader"></div>
+      </section>
+
+      <section class="pb-20 pt-12">
+        <div class="flex justify-center">
+          <form>
+            <h2 class="text-xl pb-6 text-center">
+              Be the first one to know when we launch our beta!
+            </h2>
+
+            <div>
+              <input class="w-4/5 h-11 pl-3" type="text" placeholder="E-mail" />
+              <button class="text-base bg-[#ED5E21] p-2 border-r-4">
+                Sign-up
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex justify-center md:block bg-white border-t-2 border-black md:text-sm font-bold"
+    >
+      <div class="md:flex md:pt-20 md:pb-20 md:pl-32 md:pr-32">
+        <div class="hidden md:block md:w-1/4 md:pl-32 p-4">
+          <img src="img/logo_footer.png" alt="logo_footer" />
+        </div>
+        <div class="w-full pt-12 md:pt-6 md:w-1/4 p-4">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li class="pt-5"><a href="#">RETURNS</a></li>
+            <li class="pt-5"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 p-4">
+          <ul>
+            <li><a href="#">TERMS & CONDITIONS</a></li>
+            <li class="pt-5"><a href="#">PRIVACY POLICY</a></li>
+            <li class="pt-5"><a href="#">COOKIE POLICY</a></li>
+            <li class="pt-5"><a href="#">COOKIE SETTINGS</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 p-4">
+          <ul>
+            <li><a href="#">ABOUT SECOND CHANCE</a></li>
+            <li class="pt-5"><a href="#">CAREER</a></li>
+            <li class="pt-5"><a href="#">FACEBOOK</a></li>
+            <li class="pt-5"><a href="#">INSTAGRAM</a></li>
+          </ul>
+        </div>
+        <div class="w-full flex justify-center pt-12 pb-12 md:hidden">
+          <img src="img/logo_footer.png" alt="logo_footer" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/script/index.js"></script>
+</html>
