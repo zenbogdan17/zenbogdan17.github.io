@@ -1,0 +1,80 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 24px;
+  justify-content: center;
+}
+
+.item .img {
+  width: 297px;
+  height: 297px;
+
+  border: 1px solid #000000;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.item .img:hover {
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+
+.item .label {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.bold_p {
+  font-weight: bold;
+}
+
+.buy_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  padding: 5px 40px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin: 16px auto;
+}
+
+.w-250 {
+  width: 518px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #090909;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.5s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden_loader {
+  display: none;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+#additionalContent {
+  top: 175px;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
